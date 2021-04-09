@@ -1,0 +1,27 @@
+{
+  "name": "product-api",
+  "version": "1.0.0",
+  "description": "Product API for Gapstars",
+  "main": "dist/server.js",
+  "scripts": {
+    "start": "tsc && node dist/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dilshan",
+  "license": "ISC",
+  "dependencies": {
+    "@types/csv-parse": "^1.2.2",
+    "@types/joi": "^17.2.3",
+    "@types/multer": "^1.4.5",
+    "@types/mysql": "^2.15.18",
+    "csv-parse": "^4.15.3",
+    "express": "^4.17.1",
+    "multer": "^1.4.2",
+    "mysql": "^2.18.1",
+    "typescript": "^4.2.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "tslint": "^6.1.3"
+  }
+}

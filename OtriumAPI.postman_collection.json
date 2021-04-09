@@ -1,0 +1,245 @@
+{
+	"id": "72bddc27-2f8b-ddc0-4e72-3e8b6840cc93",
+	"name": "OtriumAPI",
+	"description": "",
+	"order": [
+		"1c4a3e96-97d2-6af5-b7c2-1f788c72f5d2",
+		"61108095-df09-4dea-b0ff-f53fbc45bbfa",
+		"cf0f6ee3-8309-c779-7207-028f5d5dc4dd",
+		"b0baefe4-5e57-24fa-1c3d-e42b1c3a88bd",
+		"21aaf65e-ffa1-e9ad-de79-5077ce0102c1",
+		"38b5d9b3-e8a7-c155-67ec-03dbab23e0bd",
+		"bf6a794f-f78a-f367-9b0b-a1bce6e1b1b2"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1617916167044,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "1c4a3e96-97d2-6af5-b7c2-1f788c72f5d2",
+			"headers": "Content-Type: application/json\nx-access-token: <access_token>\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-access-token",
+					"value": "<access_token>",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3000/products/create",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1617916273337,
+			"name": "Create",
+			"description": "",
+			"collectionId": "72bddc27-2f8b-ddc0-4e72-3e8b6840cc93",
+			"responses": [],
+			"rawModeData": "{\n\t\"product_name\": \"Product1\",\n\t\"product_slug\": \"product-1\",\n\t\"sku\": \"p001\",\n\t\"brand\": \"Brand1\"\n}"
+		},
+		{
+			"id": "21aaf65e-ffa1-e9ad-de79-5077ce0102c1",
+			"headers": "x-access-token: <access_token>\n",
+			"headerData": [
+				{
+					"key": "x-access-token",
+					"value": "<access_token>",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3000/products/product-1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "72bddc27-2f8b-ddc0-4e72-3e8b6840cc93",
+			"data": null,
+			"dataMode": "params",
+			"name": "GetProductBySlug",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1617916440401,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "38b5d9b3-e8a7-c155-67ec-03dbab23e0bd",
+			"headers": "x-access-token: <access_token>\n",
+			"headerData": [
+				{
+					"key": "x-access-token",
+					"value": "<access_token>",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3000/products/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1617916472188,
+			"name": "DeleteProduct",
+			"description": "",
+			"collectionId": "72bddc27-2f8b-ddc0-4e72-3e8b6840cc93",
+			"responses": []
+		},
+		{
+			"id": "61108095-df09-4dea-b0ff-f53fbc45bbfa",
+			"headers": "x-access-token: <access_token>\n",
+			"headerData": [
+				{
+					"key": "x-access-token",
+					"value": "<access_token>",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3000/products",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1617916282562,
+			"name": "GetAllProducts",
+			"description": "",
+			"collectionId": "72bddc27-2f8b-ddc0-4e72-3e8b6840cc93",
+			"responses": []
+		},
+		{
+			"id": "b0baefe4-5e57-24fa-1c3d-e42b1c3a88bd",
+			"headers": "x-access-token: <access_token>\n",
+			"headerData": [
+				{
+					"key": "x-access-token",
+					"value": "<access_token>",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3000/products/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "72bddc27-2f8b-ddc0-4e72-3e8b6840cc93",
+			"data": null,
+			"dataMode": "params",
+			"name": "GetProductById",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1617916419850,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "bf6a794f-f78a-f367-9b0b-a1bce6e1b1b2",
+			"headers": "x-access-token: <access_token>\n",
+			"headerData": [
+				{
+					"key": "x-access-token",
+					"value": "<access_token>",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3000/products/bulk",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "72bddc27-2f8b-ddc0-4e72-3e8b6840cc93",
+			"data": [
+				{
+					"key": "file",
+					"value": "",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "BulkCreateUsers",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1617916513146,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "cf0f6ee3-8309-c779-7207-028f5d5dc4dd",
+			"headers": "Content-Type: application/json\nx-access-token: <access_token>\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-access-token",
+					"value": "<access_token>",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3000/products/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PATCH",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1617916381977,
+			"name": "UpdateProduct",
+			"description": "",
+			"collectionId": "72bddc27-2f8b-ddc0-4e72-3e8b6840cc93",
+			"responses": [],
+			"rawModeData": "{\n\t\"product_name\": \"Product1-Modified\",\n\t\"product_slug\": \"product-1-modified\",\n\t\"sku\": \"p001-modified\",\n\t\"brand\": \"Brand1-Modified\"\n}"
+		}
+	]
+}
